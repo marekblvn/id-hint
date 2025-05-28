@@ -1,0 +1,57 @@
+.container {
+    padding: 4px;
+}
+
+.settings-label {
+    padding: 4px 0 8px;
+    font-family: "Rubik", system-ui;
+    font-size: 12pt;
+    font-weight: 500;
+}
+.settings-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 8px;
+    column-gap: 5px;
+    align-items: center;
+    font-family: "Rubik", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: 
+        "wdth" 100;
+    font-size: 11pt;
+}
+
+.settings-list input {
+    width: 100%;
+}
+
+.settings-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+
+#save-button {
+    background-color: #5bb4f3;
+    color: #f9f9f9;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-family: "Rubik", system-ui;
+    font-size: 11pt;
+    margin-left: 16px;
+}
+
+#status {
+    min-height: 18px;
+    padding: 6px 6px;
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Rubik", system-ui;
+    font-size: 10pt;
+    font-weight: 500;
+    color: #18ce00
+}

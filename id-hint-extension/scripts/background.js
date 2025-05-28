@@ -2,7 +2,6 @@ const tabStates = new Map();
 
 chrome.action.onClicked.addListener(async (tab) => {
   if (!tab.id) return;
-  console.log("clicked");
   const tabId = tab.id;
   const isActive = tabStates.get(tabId) || false;
   if (!isActive) {
