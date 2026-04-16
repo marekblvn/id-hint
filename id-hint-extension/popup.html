@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/style.css" rel="stylesheet" />
+    <script src="./lib/iro.min.js"></script>
+    <title>ID Hint</title>
+  </head>
+  <body id="popup-body">
+    <script src="./scripts/popup.mjs" type="module"></script>
+    <h2>ID Hint</h2>
+    <div class="tab">
+      <button class="tab-btn active" data-targetId="tab-main">Main</button>
+      <button class="tab-btn" data-targetId="tab-settings">Settings</button>
+    </div>
+    <div id="tab-main" class="tab-content active">Main</div>
+    <div id="tab-settings" class="tab-content">
+      <h4 class="setting-section-heading">Hint settings</h4>
+      <div class="setting-section-content">
+        <div class="setting-section-item">
+          <label for="hint-position"> Hint position </label>
+          <select id="hint-position" style="height: 21px">
+            <option value="top-left">Top-left</option>
+            <option value="top-right">Top-right</option>
+            <option value="bottom-right">Bottom-right</option>
+            <option value="bottom-left">Bottom-left</option>
+          </select>
+        </div>
+        <div class="setting-section-item">
+          <label for="hint-tag-color">Hint tag color</label>
+          <div id="hint-tag-color"></div>
+        </div>
+        <div class="setting-section-item">
+          <label for="hint-id-color">Hint id color</label>
+          <div id="hint-id-color"></div>
+        </div>
+        <div class="setting-section-item">
+          <label for="hint-background-color">Hint background color</label>
+          <div id="hint-background-color"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

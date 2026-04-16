@@ -4,7 +4,8 @@
   "description": "Shows currently hovered HTML element ID.",
   "version": "1.1",
   "action": {
-    "default_title": "Activate ID Hint",
+    "default_title": "ID Hint",
+    "default_popup": "popup.html",
     "default_icon": {
       "16": "assets/icon16.png",
       "32": "assets/icon32.png",
@@ -18,9 +19,18 @@
     "48": "assets/icon48.png",
     "128": "assets/icon128.png"
   },
-  "permissions": ["scripting", "activeTab", "clipboardWrite"],
+  "permissions": ["scripting", "activeTab", "clipboardWrite", "storage"],
   "background": {
-    "service_worker": "scripts/background.js"
+    "service_worker": "./scripts/background.js"
   },
-  "host_permissions": ["<all_urls>"]
+  "host_permissions": ["<all_urls>"],
+  "commands": {
+    "toggle-extension": {
+      "suggested_key": {
+        "default": "Ctrl + I",
+        "mac": "Ctrl + I"
+      },
+      "description": "Toggle extension"
+    }
+  }
 }
