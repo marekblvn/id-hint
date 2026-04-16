@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="./styles/options.css" rel="stylesheet"> 
+    <title>Id Hint Settings</title>
+</head>
+<body>
+    <div class="container">
+        <div class="settings-label">Hint settings</div>
+        <div class="settings-list">
+            <label for="hint-position-select">Hint position</label>
+            <select name="hint-position" id="hint-position-select">
+                <option value="bottom-left">Bottom left</option>
+                <option value="bottom-right">Bottom right</option>
+                <option value="top-right">Top right</option>
+                <option value="top-left">Top left</option>
+            </select>
+            <label for="hint-bg-color-input">Hint background color</label>
+            <input name="hint-bg-color" id="hint-bg-color-input" type="color" value="#ffffff" />
+            
+            <label for="hint-tag-color-input">Hint tag color</label>
+            <input name="hint-tag-color" id="hint-tag-color-input" type="color" value="#8d0000" />
+            
+            <label for="hint-id-color-input">Hint id color</label>
+            <input name="hint-id-color" id="hint-id-color-input" type="color" value="#191919" />
+        </div>
+        <div class="settings-controls">    
+            <div id="status"></div>
+            <button id="save-button">Save</button>
+        </div>
+    </div>
+    <script src="./scripts/options.js"></script>
+</body>
+</html>
